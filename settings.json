@@ -1,0 +1,62 @@
+{
+  "preferredEditor": "vscode",
+  "checkpointing": {
+     "enabled": true
+     },
+  "excludeTools": ["ShellTool(rm -rf)"],
+    "Geminicodeassist: Rules": [
+        "When validating input in a public method, use _doing_it_wrong() to report errors, including the method name, a clear message, and the WordPress version number."
+    ],   
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "github": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": ""
+      },
+      "timeout": 5000
+    },
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp"
+    },
+    "atlassian-mcp-server": {
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "type": "http",
+       "inputs": []
+    }, 
+    "agentql": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agentql-mcp"
+      ],
+      "env": {
+        "AGENTQL_API_KEY": ""
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "/Users/rohit/Downloads/memory/memory.json"
+      }
+    }
+  }
+}
+
